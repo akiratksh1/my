@@ -1,0 +1,98 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('oceano.gif'), url('oceano.gif');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left, right;
+}
+
+.white-rectangle {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(17, 12, 35);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.header-top {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.header-middle {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  flex-grow: 1;
+}
+
+.header-bottom {
+  font-size: 1.5rem;
+  text-align: center;
+  color: red;
+  margin-bottom: 10px;
+}
+
+@keyframes rain {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0px 1000px;
+  }
+}
+
+h1:first-child {
+  font-size: 1rem;
+}
+
+h1:nth-child(2) {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+h1:last-child {
+  font-size: 1.5rem;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  font-size: 1.2em;
+  padding: 1em;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button:hover {
+  background-color: #6c1fd1;
+}
+
+.message-box {
+  background-color: black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.message-box p {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
